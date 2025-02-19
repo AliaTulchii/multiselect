@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    
+    <title>Multiselect</title>
+</head>
+<body>
+    <div class="multiselect container">
+        <div class="multiselect__selected" id="selected-items"></div>
+        <div class="multiselect__options">
+            <div class="input__wrapper">
+            <input class="input" type="text" id="search-input" placeholder="Chose element...">
+            <button class="input__btn" id="input-btn">
+                &#9660;
+            </button>
+            </div>
+        <div class="multiselect__dropdown" id="dropdown">
+            <div class="option" data-value="lexus">Lexus</div>
+            <div class="option" data-value="toyota">Toyota</div>
+            <div class="option" data-value="nissan">Nissan</div>
+            <div class="option" data-value="mazda">Mazda</div>
+            <div class="option" data-value="mercedes">Mercedes-Benz</div>
+            <div class="option" data-value="bmw">BMW</div>
+        </div>
+        </div>
+        
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
