@@ -12,21 +12,68 @@
 </head>
 <body>
     <div class="multiselect container">
-        <div class="multiselect__selected" id="selected-items"></div>
-        <div class="multiselect__options">
-            <div class="input__wrapper">
-            <input class="input" type="text" id="search-input" placeholder="Chose element...">
+        <div class="multiselect__selected" id="selected-items">
+            <p class="multiselect__selected-text" id="text">Select car's model</p>
             <button class="input__btn" id="input-btn">
                 &#9660;
             </button>
+        </div>
+        <div class="multiselect__options" id="dropdown">
+            <div class="input__wrapper">   
+            <div class="checkbox__all-wrapper">
+                <label for="mainCheckbox" class="checkbox__label-all">
+                <input id="mainCheckbox"  class="checkbox__all" type="checkbox" />
+                <span class="custom__checkbox-all"></span>
+                All
+                </label>
+            </div>         
+            
+            <input class="input" type="text" id="search-input" placeholder="Chose element...">
             </div>
-        <div class="multiselect__dropdown" id="dropdown">
-            <div class="option" data-value="lexus">Lexus</div>
-            <div class="option" data-value="toyota">Toyota</div>
-            <div class="option" data-value="nissan">Nissan</div>
-            <div class="option" data-value="mazda">Mazda</div>
-            <div class="option" data-value="mercedes">Mercedes-Benz</div>
-            <div class="option" data-value="bmw">BMW</div>
+        <div class="multiselect__dropdown" >
+            <div class="option" data-value="lexus">                
+                <label for="lexus" class="checkbox__label">                      
+                    <input id="lexus"  class="checkbox" type="checkbox" />
+                    <span class="custom__checkbox"></span>
+                    Lexus
+                </label>
+            </div>
+            <div class="option" data-value="toyota">                
+                <label for="toyota" class="checkbox__label">    
+                    <input id="toyota"  class="checkbox" type="checkbox" />
+                    <span class="custom__checkbox"></span>
+                    Toyota
+                </label>
+            </div>
+            <div class="option" data-value="nissan">                
+                <label for="nissan" class="checkbox__label">  
+                    <input id="nissan"  class="checkbox" type="checkbox" />
+                    <span class="custom__checkbox"></span>
+                    Nissan
+                </label>
+            </div>
+            <div class="option" data-value="mazda">                
+                <label for="mazda" class="checkbox__label"> 
+                    <input id="mazda"  class="checkbox" type="checkbox" />
+                    <span class="custom__checkbox"></span>
+                    Mazda
+                </label>
+            </div>
+            <div class="option" data-value="mercedes">                
+                <label for="merce" class="checkbox__label">  
+                    <input id="merce"  class="checkbox" type="checkbox" />
+                    <span class="custom__checkbox"></span>
+                    Mercedes-Benz
+                </label>
+            </div>
+            <div class="option" data-value="bmw">                
+                <label for="bmw" class="checkbox__label">  
+                    <input id="bmw"  class="checkbox" type="checkbox" />
+                    <span class="custom__checkbox"></span>
+                    BMW
+                </label>
+            </div>
+
         </div>
         </div>
         
